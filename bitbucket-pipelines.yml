@@ -16,7 +16,9 @@ pipelines:
                 BITBUCKET_APP_PASSWORD: "FnNg43sKPWjr7Jqz6ChH"
                 WORKSPACE: "ietharsh3" # Optional
                 # REPO_LIST: "<string>" # Optional
-                FILENAME: "build_usage_stats_$(date +"%Y_%m_%d_%I_%M_%p").log" # Optional
+                FILENAME: "build_usage_stats.txt # Optional
                 # OUTPUT_FILE_FORMAT: "<string>" # Optional
                 # BUILD_DAYS: "15" # Optional
                 # DEBUG: "<boolean>" # Optional
+          artifacts:
+            -  build_usage_stats.txt
