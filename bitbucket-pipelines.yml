@@ -1,0 +1,22 @@
+# This is an example Starter pipeline configuration
+# Use a skeleton to build, test and deploy using manual and parallel steps
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+
+image: atlassian/default-image:3
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          script:
+            - pipe: atlassian/bitbucket-build-statistics:1.1.1
+              variables:
+                BITBUCKET_USERNAME: "ietharsh3"
+                BITBUCKET_APP_PASSWORD: "FnNg43sKPWjr7Jqz6ChH"
+                WORKSPACE: "ietharsh3" # Optional
+                # REPO_LIST: "<string>" # Optional
+                # FILENAME: "<string>" # Optional
+                # OUTPUT_FILE_FORMAT: "<string>" # Optional
+                # BUILD_DAYS: "15" # Optional
+                # DEBUG: "<boolean>" # Optional
