@@ -8,7 +8,7 @@ pipelines:
             - pipe: atlassian/bitbucket-build-statistics:1.1.1
               variables:
                 BITBUCKET_USERNAME: "ietharsh3"
-                BITBUCKET_APP_PASSWORD: "FnNg43sKPWjr7Jqz6ChH"
+                BITBUCKET_APP_PASSWORD: "app-password"
                 WORKSPACE: "ietharsh3"
                 FILENAME: "build_usage_stats.txt"
                 OUTPUT_FILE_FORMAT: "table" 
